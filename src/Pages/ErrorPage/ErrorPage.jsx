@@ -3,7 +3,7 @@ import { Link, useRouteError } from "react-router-dom"
 const ErrorPage = () => {
     const error = useRouteError()
     return (
-        <div className="h-screen flex items-center justify-center">
+        <div className="h-screen flex items-center justify-center ">
             <div className="p-5 shadow-md shadow-gray-500 space-y-3 text-center rounded-md">
                 <h1 className="text-red-700 font-bold md:text-2xl">Oops something Wrong!!!</h1>
                 <p>
