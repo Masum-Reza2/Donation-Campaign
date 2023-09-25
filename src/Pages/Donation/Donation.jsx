@@ -29,7 +29,7 @@ const Donation = () => {
     <>
       <div className="grid gap-5 grid-cols-1 md:grid-cols-2 py-5">
         {
-          allSelections.slice(0, displayLength).map(item => <SelectedDonations key={item.id} item={item} />)
+          allSelections.slice(0, displayLength).map((item,index) => <SelectedDonations key={index} item={item} />)
         }
       </div>
 
