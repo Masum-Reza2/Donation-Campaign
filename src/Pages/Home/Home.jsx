@@ -1,10 +1,11 @@
-import { useLoaderData } from "react-router-dom"
 import Banner from "../../components/Header/Banner/Banner"
 import Rights from "../../components/Rights/Rights"
+import { useContext } from "react"
+import { donationsContext } from "../../MainLayOut/MainLayOut"
 
 const Home = () => {
 
-  const donations = useLoaderData()
+  const donations = useContext(donationsContext)
 
   return (
     <div>
