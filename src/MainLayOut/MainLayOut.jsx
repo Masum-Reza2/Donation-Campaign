@@ -5,9 +5,8 @@ const MainLayOut = () => {
         <div className="w-[90%] mx-auto">
             navbar here
             <div className="min-h-[80vh]">
-            <Outlet />
+                <Outlet />
             </div>
-            footer here
         </div>
     )
 }
