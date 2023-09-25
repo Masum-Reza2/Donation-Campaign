@@ -18,8 +18,8 @@ const SelectionDetails = () => {
         <div>
             <div className="w-full mx-auto py-5 relative">
                 <img className="h-full w-full" src={picture} alt="" />
-                <div className="bg-[#0B0B0B80] w-full h-[25%] md:h-[20%] absolute bottom-5 flex items-center">
-                    <button onClick={() => saveToLS(id)} className="text-white ml-6 px-3 py-1 rounded-sm hover:-translate-y-[0.10rem] active:translate-y-[0.10rem]" style={{ backgroundColor: text_button_bg_color }}>Donate ${price}</button>
+                <div className="bg-[#0B0B0B80] w-full h-[25%] md:h-[15%] absolute bottom-5 flex items-center">
+                    <button onClick={() => saveToLS(id)} className="text-white ml-6 px-3 py-1 md:py-2 rounded-sm hover:-translate-y-[0.10rem] active:translate-y-[0.10rem] font-semibold" style={{ backgroundColor: text_button_bg_color }}>Donate ${price}</button>
                 </div>
             </div>
             <div className="space-y-3 pb-5">
