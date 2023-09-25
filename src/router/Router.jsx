@@ -11,7 +11,7 @@ const Router = createBrowserRouter([
         element: <MainLayOut />,
         errorElement: <ErrorPage />,
         children: [
-            { path: '/', element: <Home /> },
+            { path: '/', loader: () => fetch('/donations.json'), element: <Home /> },
             { path: '/donation', element: <Donation /> },
             { path: '/statistics', element: <Statistics /> },
         ]
