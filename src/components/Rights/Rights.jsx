@@ -7,6 +7,7 @@ const Rights = ({ donations, searchText, toggleDep }) => {
     const [health, setHealth] = useState([])
     const [education, setEducation] = useState([])
     const [food, setFood] = useState([])
+    const [cloth, setCloth] = useState([])
 
     const [displayDonation, setDisplayDonation] = useState([])
 
@@ -20,6 +21,9 @@ const Rights = ({ donations, searchText, toggleDep }) => {
         let foodDonation = donations.filter(item => item.category.includes('Food'))
         setFood(foodDonation)
 
+        let clothDonation = donations.filter(item => item.category.includes('Clothing'))
+        setCloth(clothDonation)
+
         setDisplayDonation(donations)
 
         if (searchText === 'health'.toLowerCase() || searchText === 'health'.toUpperCase() || searchText === 'Health') {
@@ -30,6 +34,9 @@ const Rights = ({ donations, searchText, toggleDep }) => {
         }
         else if (searchText === 'food'.toLowerCase() || searchText === 'food'.toUpperCase() || searchText === 'Food') {
             setDisplayDonation(food)
+        }
+        else if (searchText === 'cloth'.toLowerCase() || searchText === 'cloth'.toUpperCase() || searchText === 'cloth') {
+            setDisplayDonation(cloth)
         }
         else if (searchText !== 'ZogaKhichuri') {
             setDisplayDonation(donations)
