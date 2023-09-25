@@ -43,7 +43,7 @@ const Navbar = () => {
                     <img className='w-[60%]' src={logo} alt="logo" />
                 </div>
 
-                <ul className='flex gap-10'>
+                <ul className='flex gap-10 font-semibold'>
                     {links}
                 </ul>
             </nav>

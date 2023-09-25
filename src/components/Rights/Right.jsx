@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import { saveToLS } from '../../Utilities/LocalStorage';
 
 const Right = ({ right }) => {
-    let { id, picture, category, title, card_bg_color, text_button_bg_color } = right;
+    let { id, picture, category, title, card_bg_color, text_button_bg_color, category_bg_color } = right;
 
 
     return (
@@ -11,7 +11,7 @@ const Right = ({ right }) => {
                 <img src={picture} alt="" />
             </div>
             <div className='space-y-1 font-bold pl-3' style={{ color: text_button_bg_color }}>
-                <p className={`py-1 px-3 w-fit rounded-md text-sm`} style={{ backgroundColor: card_bg_color }}>{category}</p>
+                <p className={`py-1 px-3 w-fit rounded-md text-sm`} style={{ backgroundColor: category_bg_color }}>{category}</p>
                 <p>{title}</p>
             </div>
         </div>

@@ -23,7 +23,7 @@ const Donation = () => {
       selectedDonations.push(selections)
     })
     setAllSelections(selectedDonations)
-  }, [])
+  }, [toggleBtn])
 
   return (
     <>
