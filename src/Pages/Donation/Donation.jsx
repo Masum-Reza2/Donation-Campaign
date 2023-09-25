@@ -34,9 +34,18 @@ const Donation = () => {
       </div>
 
       <div className="text-center pb-5">
-        {toggleBtn &&
-          allSelections.length > 4 && <button className="bg-[#009444] text-white font-semibold px-3 py-1 rounded-md hover:-translate-y-[0.10rem] active:translate-y-[0.10rem]" onClick={handleSeeAll}>See All</button>
+        {
+          allSelections.length > 0 ?
+            <div>
+              {toggleBtn &&
+                allSelections.length > 4 && <button className="bg-[#009444] text-white font-semibold px-3 py-1 rounded-md hover:-translate-y-[0.10rem] active:translate-y-[0.10rem]" onClick={handleSeeAll}>See All</button>
+              }
+            </div> : <div className="h-[50vh] flex flex-col items-center justify-center">
+              <p className="font-bold text-lg md:text-2xl" style={{textShadow:'1px 1px 1px red'}}>No donations yet, please help the needy...</p>
+              <p className="text-2xl md:text-5xl animate-bounce mt-5">❤️</p>
+            </div>
         }
+
       </div>
     </>
   )
