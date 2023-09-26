@@ -1,8 +1,8 @@
-# React + Vite
+# 3 Project features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- The great heart user's can easily donate in the field they want to donate. As there is an option for searching the donation cattegory.
+- If user mistakenly never put any text in the search field then, the UI will show him/her a nice toast message.
+- User can see whenevr he/she donate in a field more then 1 time by a sweet alart.
+- The fields user donated will store in the donation route, user can easily find the fields where he/she donated in details.
+- User can see the percentage of his donation against the total donation in the statistics route.
+- If user never donate in any field, he/she can see the message "No donations yet, please help the needy..."
