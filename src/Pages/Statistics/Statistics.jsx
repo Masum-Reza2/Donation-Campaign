@@ -33,7 +33,7 @@ const Statistics = () => {
 
 
   return (
-    <div className="h-[80vh] flex items-center justify-center">
+    <div className="h-[70vh] flex items-center justify-center">
       <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
           <Pie
