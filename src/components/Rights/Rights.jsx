@@ -35,7 +35,7 @@ const Rights = ({ donations, searchText, toggleDep }) => {
         else if (searchText === 'food'.toLowerCase() || searchText === 'food'.toUpperCase() || searchText === 'Food') {
             setDisplayDonation(food)
         }
-        else if (searchText === 'cloth'.toLowerCase() || searchText === 'cloth'.toUpperCase() || searchText === 'cloth') {
+        else if (searchText === 'clothing'.toLowerCase() || searchText === 'clothing'.toUpperCase() || searchText === 'Clothing') {
             setDisplayDonation(cloth)
         }
         else if (searchText !== 'ZogaKhichuri') {
