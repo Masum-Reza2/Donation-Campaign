@@ -1,13 +1,18 @@
-import { Outlet, useLoaderData, useNavigation } from "react-router-dom"
+import { Outlet, useLoaderData, useLocation, useNavigation } from "react-router-dom"
 import Navbar from "../components/Header/Navbar"
 import Spinner from "./Spinner";
-import { createContext } from "react";
+import { createContext, useEffect } from "react";
 export const donationsContext = createContext()
 
 const MainLayOut = () => {
 
     const navigation = useNavigation();
-    const donations = useLoaderData()
+    const donations = useLoaderData();
+    const loc = useLocation()
+
+    useEffect(() => {
+        document.title = `donation campaign${loc.pathname === '/' ? '-Home' : loc.pathname.replace('/', '-')}`
+    }, [loc])
 
     return (
         <donationsContext.Provider value={donations}>
