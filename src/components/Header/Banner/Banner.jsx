@@ -5,8 +5,8 @@ const Banner = ({ handleChange, handleBtn }) => {
 
 
     return (
-        <div className="h-[70vh] w-[100%]  flex flex-col items-center justify-center rounded-md relative">
-            <img className='absolute h-[70vh] top-0 -z-10 opacity-10 w-fit' src={bannerBg} alt="" />
+        <div className="h-[50vh] md:h-[70vh] w-[100%]  flex flex-col items-center justify-center rounded-md relative">
+            <img className='h-[50vh] absolute md:h-[70vh] top-0 -z-10 opacity-10 w-fit' src={bannerBg} alt="" />
 
             <div className='space-y-5'>
                 <h1 className='font-bold text-xl md:text-4xl text-center'>I Grow By Helping People In Need</h1>

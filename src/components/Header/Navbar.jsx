@@ -32,7 +32,7 @@ const Navbar = () => {
                     }
                 </div>
 
-                <ul className={`absolute transition-all duration-1000 rounded-md  py-5 font-semibold border w-[90%] text-center shadow-md shadow-gray-500 bg-white flex flex-col gap-3 ${!toggleMenu ? 'top-20 ' : '-top-60'} `}>
+                <ul className={`absolute transition-all duration-1000 rounded-md z-10  py-5 font-semibold border w-[90%] text-center shadow-md shadow-gray-500 bg-white flex flex-col gap-3 ${!toggleMenu ? 'top-20 ' : '-top-60'} `}>
                     {links}
                 </ul>
             </nav>
